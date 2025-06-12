@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trezor Image Generator</title>
+    <script defer type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <canvas id="trezorCanvas" width="128" height="64"></canvas>
+    <label>
+      <span>Enter text</span>
+      <input type="text" id="textInput" placeholder="Enter text" value=":)" />
+    </label>
+    <label>
+      <span>Font size</span>
+      <input
+        type="number"
+        id="fontSizeInput"
+        placeholder="Font size"
+        value="45" />
+    </label>
+    <label>
+      <span>X position</span>
+      <input type="number" id="posXInput" placeholder="X position" value="64" />
+    </label>
+    <label>
+      <span>Y position</span>
+      <input type="number" id="posYInput" placeholder="Y position" value="32" />
+    </label>
+    <a id="downloadLink">Download image</a>
+  </body>
+</html>
